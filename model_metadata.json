@@ -1,0 +1,83 @@
+{
+    "project_title": "Stroke Prediction",
+    "task_type": "classification",
+    "target_column": "stroke",
+    "best_model_name": "LogisticRegression",
+    "numeric_features": [
+        "age",
+        "hypertension",
+        "heart_disease",
+        "avg_glucose_level",
+        "bmi"
+    ],
+    "categorical_features": [
+        "gender",
+        "ever_married",
+        "work_type",
+        "Residence_type",
+        "smoking_status"
+    ],
+    "feature_ranges": {
+        "age": {
+            "min": 18,
+            "max": 82,
+            "default": 50,
+            "dtype": "int"
+        },
+        "hypertension": {
+            "min": 0,
+            "max": 1,
+            "default": 0,
+            "dtype": "int"
+        },
+        "heart_disease": {
+            "min": 0,
+            "max": 1,
+            "default": 0,
+            "dtype": "int"
+        },
+        "avg_glucose_level": {
+            "min": 55.0,
+            "max": 270.0,
+            "default": 168.25,
+            "dtype": "float"
+        },
+        "bmi": {
+            "min": 16.0,
+            "max": 48.0,
+            "default": 32.84,
+            "dtype": "float"
+        }
+    },
+    "categorical_options": {
+        "gender": [
+            "Male",
+            "Female"
+        ],
+        "ever_married": [
+            "Yes",
+            "No"
+        ],
+        "work_type": [
+            "Private",
+            "Self-employed",
+            "Govt_job",
+            "children"
+        ],
+        "Residence_type": [
+            "Urban",
+            "Rural"
+        ],
+        "smoking_status": [
+            "never smoked",
+            "formerly smoked",
+            "smokes",
+            "Unknown"
+        ]
+    },
+    "metrics": {
+        "accuracy": 0.9444,
+        "f1_score": 0.9153,
+        "roc_auc": 0.9859
+    }
+}
